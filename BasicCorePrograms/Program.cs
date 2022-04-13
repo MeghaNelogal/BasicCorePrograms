@@ -6,7 +6,7 @@ class Program
     {
         Console.WriteLine("welcome to Basic Programs");
         bool end = true;
-        Console.WriteLine("1. FlipCoin\n2. LeapYear\n3. PowerOfTwo\n4. HarmonicNumbers\n5. End the program");
+        Console.WriteLine("1. FlipCoin\n2. LeapYear\n3. PowerOfTwo\n4. HarmonicNumbers\n5. PrimeFactors\n6.End the program");
         while (end)
         {
             Console.WriteLine("Take an option to execute");
@@ -30,6 +30,10 @@ class Program
                     harmonic.CheckHarmonic();
                     break;
                 case 5:
+                    PrimeFactors prime = new PrimeFactors();
+                    prime.CheckPrime();
+                    break;
+                case 6:
                     end = false;
                     break;
 
