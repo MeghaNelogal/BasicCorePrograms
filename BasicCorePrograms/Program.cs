@@ -6,7 +6,7 @@ class Program
     {
         Console.WriteLine("welcome to Basic Programs");
         bool end = true;
-        Console.WriteLine("1. FlipCoin\n2. LeapYear\n3. PowerOfTwo\n4. HarmonicNumbers\n5. PrimeFactors\n6. QuotientAndRemainder\n7. SwapTwoNumbers\n8. End the program");
+        Console.WriteLine("1. FlipCoin\n2. LeapYear\n3. PowerOfTwo\n4. HarmonicNumbers\n5. PrimeFactors\n6. QuotientAndRemainder\n7. SwapTwoNumbers\n8. OddOrEven\n9.End the program");
         while (end)
         {
             Console.WriteLine("Take an option to execute");
@@ -42,6 +42,10 @@ class Program
                     swap.CheckSwap();
                     break;
                 case 8:
+                    EvenOrOdd oddeven = new EvenOrOdd();
+                    oddeven.CheckEvenOdd();
+                    break;
+                case 9:
                     end = false;
                     break;
 
