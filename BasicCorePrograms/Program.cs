@@ -1,12 +1,32 @@
-﻿using System;
-
-namespace BasicCorePrograms
+﻿using BasicCorePrograms;
+using System;
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        Console.WriteLine("welcome to Basic Programs");
+        bool end = true;
+        Console.WriteLine("1. FlipCoin\n2. End the program");
+        while (end)
         {
-            Console.WriteLine("Weclcome to basic programs");
+            Console.WriteLine("Take an option to execute");
+            int option = Convert.ToInt32(Console.ReadLine());
+            switch (option)
+            {
+                case 1:
+                    FlipCoin flip = new FlipCoin();
+                    flip.CheckFlip();
+                    break;
+                case 2:
+                    end = false;
+                    break;
+
+                default:
+                    Console.WriteLine("Enter proper option to Execute");
+                    break;
+            }
         }
     }
 }
+
+
