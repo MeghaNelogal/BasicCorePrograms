@@ -6,7 +6,7 @@ class Program
     {
         Console.WriteLine("welcome to Basic Programs");
         bool end = true;
-        Console.WriteLine("1. FlipCoin\n2. LeapYear\n3. PowerOfTwo\n4. HarmonicNumbers\n5. PrimeFactors\n6. QuotientAndRemainder\n7. SwapTwoNumbers\n8. OddOrEven\n9. VowelOrConsonant\n10. End the program");
+        Console.WriteLine("1. FlipCoin\n2. LeapYear\n3. PowerOfTwo\n4. HarmonicNumbers\n5. PrimeFactors\n6. QuotientAndRemainder\n7. SwapTwoNumbers\n8. OddOrEven\n9. VowelOrConsonant\n10. LargestAmongThreeNumbers\n11. End the program");
         while (end)
         {
             Console.WriteLine("Take an option to execute");
@@ -50,6 +50,10 @@ class Program
                     vowel.CheckVowelConsonant();
                     break;
                 case 10:
+                    LargestAmongThreeNumbers largest = new LargestAmongThreeNumbers();
+                    largest.CheckLargeNum();
+                    break;
+                case 11:
                     end = false;
                     break;
 
